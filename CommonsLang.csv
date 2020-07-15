@@ -1,0 +1,51 @@
+Test Id,Method Id,Method Role,Method Modifiers,Methods Header,Fully Qualified Name,Start Line,End Line
+CL-000080,CL-000084,contextual,N/A,"boolean parse(FastDateParser parser, Calendar calendar, String source, ParsePosition pos, int maxWidth)",org.apache.commons.lang3.time.FastDateParser$Strategy.parse(Lorg/apache/commons/lang3/time/FastDateParser;Ljava/util/Calendar;Ljava/lang/String;Ljava/text/ParsePosition;I)Z,507,507
+CL-000117,CL-000119,contextual,public abstract,String lookup(String key),org.apache.commons.lang3.text.StrLookup.lookup(Ljava/lang/String;)Ljava/lang/String;,118,118
+CL-000158,CL-000144,focal,public static,boolean isValidAnnotationMemberType(Class<?> type),org.apache.commons.lang3.AnnotationUtils.isValidAnnotationMemberType(Ljava/lang/Class;)Z,222,231
+CL-000038,CL-000039,focal,public static,"int toInt(String str, int defaultValue)",org.apache.commons.lang3.math.NumberUtils.toInt(Ljava/lang/String;I)I,121,130
+CL-000159,CL-000160,focal,public static,boolean isSupported(String name),org.apache.commons.lang3.CharEncoding.isSupported(Ljava/lang/String;)Z,92,101
+CL-000156,CL-000157,focal,public static,"String substring(String str, int start)",org.apache.commons.lang3.StringUtils.substring(Ljava/lang/String;I)Ljava/lang/String;,2482,2500
+CL-000033,CL-000037,contextual,public,int intValue(),org.apache.commons.lang3.mutable.MutableInt.intValue()I,287,290
+CL-000154,CL-000155,focal,public static,int hexDigitToInt(char hexDigit),org.apache.commons.lang3.Conversion.hexDigitToInt(C)I,97,103
+CL-000198,CL-000206,helper,N/A,void tearDown(),org.apache.commons.lang3.builder.JsonToStringStyleTest.tearDown()V,44,47
+CL-000074,CL-000079,contextual,public static,String toString(Type type),org.apache.commons.lang3.reflect.TypeUtils.toString(Ljava/lang/reflect/Type;)Ljava/lang/String;,1661,1679
+CL-000151,CL-000153,contextual,public static transient,<T extends Object> T firstNonNull(T[] values),org.apache.commons.lang3.ObjectUtils.firstNonNull([Ljava/lang/Object;)Ljava/lang/Object;,120,129
+CL-000091,CL-000094,contextual,public,int getDenominator(),org.apache.commons.lang3.math.Fraction.getDenominator()I,370,372
+CL-000207,CL-000057,contextual,N/A,"boolean parse(String source, ParsePosition pos, Calendar calendar)",org.apache.commons.lang3.time.FastDateParser.parse(Ljava/lang/String;Ljava/text/ParsePosition;Ljava/util/Calendar;)Z,418,429
+CL-000127,CL-000129,contextual,public static,"<L extends Object, R extends Object> MutablePair<L, R> of(L left, R right)",org.apache.commons.lang3.tuple.MutablePair.of(Ljava/lang/Object;Ljava/lang/Object;)Lorg/apache/commons/lang3/tuple/MutablePair;,51,53
+CL-000048,CL-000054,helper,N/A,int getPeriodEnds(),org.apache.commons.lang3.concurrent.TimedSemaphoreTest$TimedSemaphoreTestImpl.getPeriodEnds()I,452,456
+CL-000125,CL-000017,contextual,public static,"float nextFloat(float startInclusive, float endInclusive)",org.apache.commons.lang3.RandomUtils.nextFloat(FF)F,205,215
+CL-000167,CL-000197,helper,N/A,void tearDown(),org.apache.commons.lang3.text.StrSubstitutorTest.tearDown()V,50,53
+CL-000000,CL-000013,contextual,public static,"double min(double a, double b)",org.apache.commons.lang3.math.IEEE754rUtils.min(DD)D,104,113
+CL-000045,CL-000047,contextual,public synchronized,void shutdown(),org.apache.commons.lang3.concurrent.TimedSemaphore.shutdown()V,264,278
+CL-000043,CL-000044,focal,public,FieldUtils(),org.apache.commons.lang3.reflect.FieldUtils.<init>()V,46,48
+CL-000120,CL-000124,helper,N/A,DatePrinter getInstance(String format),org.apache.commons.lang3.time.FastDatePrinterTest.getInstance(Ljava/lang/String;)Lorg/apache/commons/lang3/time/DatePrinter;,52,54
+CL-000040,CL-000042,contextual,N/A,Collection<Thread> findThreads(ThreadPredicate predicate),org.apache.commons.lang3.ThreadUtils.findThreads(Lorg/apache/commons/lang3/ThreadUtils$ThreadPredicate;)Ljava/util/Collection;,370,372
+CL-000161,CL-000009,contextual,public static transient,"void isTrue(boolean expression, String message, Object[] values)",org.apache.commons.lang3.Validate.isTrue(ZLjava/lang/String;[Ljava/lang/Object;)V,156,160
+CL-000085,CL-000090,contextual,public static,<T extends Object> EventListenerSupport<T> create(Class<T> listenerInterface),org.apache.commons.lang3.event.EventListenerSupport.create(Ljava/lang/Class;)Lorg/apache/commons/lang3/event/EventListenerSupport;,108,110
+CL-000162,CL-000166,helper,N/A,void setUp(),org.apache.commons.lang3.reflect.FieldUtilsTest.setUp()V,51,57
+CL-000018,CL-000024,contextual,public abstract,R getRight(),org.apache.commons.lang3.tuple.Pair.getRight()Ljava/lang/Object;,79,79
+CL-000136,CL-000141,contextual,static,"int indexOf(CharSequence cs, CharSequence searchChar, int start)",org.apache.commons.lang3.CharSequenceUtils.indexOf(Ljava/lang/CharSequence;Ljava/lang/CharSequence;I)I,94,105
+CL-000016,CL-000017,focal,public static,"float nextFloat(float startInclusive, float endInclusive)",org.apache.commons.lang3.RandomUtils.nextFloat(FF)F,205,215
+CL-000014,CL-000015,focal,public,DurationFormatUtils(),org.apache.commons.lang3.time.DurationFormatUtils.<init>()V,58,60
+CL-000058,CL-000062,helper,N/A,void setUp(),org.apache.commons.lang3.exception.DefaultExceptionContextTest.setUp()V,27,32
+CL-000212,CL-000098,contextual,public static,"Fraction getFraction(int whole, int numerator, int denominator)",org.apache.commons.lang3.math.Fraction.getFraction(III)Lorg/apache/commons/lang3/math/Fraction;,170,190
+CL-000055,CL-000057,contextual,N/A,"boolean parse(String source, ParsePosition pos, Calendar calendar)",org.apache.commons.lang3.time.FastDateParser.parse(Ljava/lang/String;Ljava/text/ParsePosition;Ljava/util/Calendar;)Z,418,429
+CL-000099,CL-000100,focal,public,int hashCode(),org.apache.commons.lang3.mutable.MutableObject.hashCode()I,111,114
+CL-000132,CL-000135,contextual,public,String toString(),org.apache.commons.lang3.text.StrBuilder.toString()Ljava/lang/String;,2875,2878
+CL-000097,CL-000094,contextual,public,int getDenominator(),org.apache.commons.lang3.math.Fraction.getDenominator()I,370,372
+CL-000130,CL-000131,focal,public static,"String mid(String str, int pos, int len)",org.apache.commons.lang3.StringUtils.mid(Ljava/lang/String;II)Ljava/lang/String;,2663,2677
+CL-000095,CL-000094,contextual,public,int getDenominator(),org.apache.commons.lang3.math.Fraction.getDenominator()I,370,372
+CL-000071,CL-000066,contextual,public final,String translate(CharSequence input),org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(Ljava/lang/CharSequence;)Ljava/lang/String;,54,66
+CL-000108,CL-000116,helper,N/A,"void assertCorrect(String assertMessage, NotImplementedException nie, String message, Throwable nested, String code)",org.apache.commons.lang3.NotImplementedExceptionTest.assertCorrect(Ljava/lang/String;Lorg/apache/commons/lang3/NotImplementedException;Ljava/lang/String;Ljava/lang/Throwable;Ljava/lang/String;)V,48,53
+CL-000029,CL-000032,contextual,public,long longValue(),org.apache.commons.lang3.mutable.MutableFloat.longValue()J,314,317
+CL-000106,CL-000107,focal,public,boolean isAllSet(int holder),org.apache.commons.lang3.BitField.isAllSet(I)Z,177,179
+CL-000103,CL-000105,focal,public,void setValue(T value),org.apache.commons.lang3.mutable.MutableObject.setValue(Ljava/lang/Object;)V,73,76
+CL-000148,CL-000139,contextual,public static,boolean isEmpty(CharSequence cs),org.apache.commons.lang3.StringUtils.isEmpty(Ljava/lang/CharSequence;)Z,208,210
+CL-000101,CL-000102,focal,public,boolean equals(Object obj),org.apache.commons.lang3.mutable.MutableObject.equals(Ljava/lang/Object;)Z,91,104
+CL-000025,CL-000028,contextual,private,boolean isZeroToThree(char ch),org.apache.commons.lang3.text.translate.OctalUnescaper.isZeroToThree(C)Z,76,78
+CL-000069,CL-000066,contextual,public final,String translate(CharSequence input),org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(Ljava/lang/CharSequence;)Ljava/lang/String;,54,66
+CL-000146,CL-000147,focal,public static transient,CharSet getInstance(String[] setStrs),org.apache.commons.lang3.CharSet.getInstance([Ljava/lang/String;)Lorg/apache/commons/lang3/CharSet;,155,166
+CL-000067,CL-000066,contextual,public final,String translate(CharSequence input),org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(Ljava/lang/CharSequence;)Ljava/lang/String;,54,66
+CL-000142,CL-000145,contextual,private static,"boolean memberEquals(Class<?> type, Object o1, Object o2)",org.apache.commons.lang3.AnnotationUtils.memberEquals(Ljava/lang/Class;Ljava/lang/Object;Ljava/lang/Object;)Z,262,276
+CL-000063,CL-000066,contextual,public final,String translate(CharSequence input),org.apache.commons.lang3.text.translate.CharSequenceTranslator.translate(Ljava/lang/CharSequence;)Ljava/lang/String;,54,66

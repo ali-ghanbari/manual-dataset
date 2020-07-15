@@ -1,0 +1,51 @@
+Test Id,Method Id,Method Role,Method Modifiers,Methods Header,Fully Qualified Name,Start Line,End Line
+JT-000111,JT-000107,helper,N/A,void tearDown(),org.joda.time.TestInterval_Constructors.tearDown()V,95,103
+JT-000035,JT-000057,helper,N/A,void tearDown(),org.joda.time.TestDateMidnight_Properties.tearDown()V,92,97
+JT-000079,JT-000025,contextual,public,"BaseDateTime(int year, int monthOfYear, int dayOfMonth, int hourOfDay, int minuteOfHour, int secondOfMinute, int millisOfSecond, DateTimeZone zone)",org.joda.time.base.BaseDateTime.<init>(IIIIIIILorg/joda/time/DateTimeZone;)V,217,228
+JT-000197,JT-000204,helper,N/A,void tearDown(),org.joda.time.TestMonthDay_Constructors.tearDown()V,74,78
+JT-000274,JT-000282,helper,N/A,void tearDown(),org.joda.time.TestPartial_Constructors.tearDown()V,65,69
+JT-000074,JT-000073,helper,N/A,void tearDown(),org.joda.time.TestDateTime_Constructors.tearDown()V,92,98
+JT-000075,JT-000078,contextual,public,"BaseDateTime(long instant, DateTimeZone zone)",org.joda.time.base.BaseDateTime.<init>(JLorg/joda/time/DateTimeZone;)V,109,111
+JT-000152,JT-000159,helper,N/A,void tearDown(),org.joda.time.TestLocalTime_Basics.tearDown()V,89,93
+JT-000317,JT-000316,helper,N/A,void tearDown(),org.joda.time.TestTimeOfDay_Constructors.tearDown()V,83,88
+JT-000117,JT-000125,helper,N/A,void tearDown(),org.joda.time.TestLocalDate_Basics.tearDown()V,112,118
+JT-000238,JT-000251,helper,N/A,void tearDown(),org.joda.time.TestMutablePeriod_Constructors.tearDown()V,90,98
+JT-000083,JT-000087,contextual,public,"DateTime(Object instant, DateTimeZone zone)",org.joda.time.DateTime.<init>(Ljava/lang/Object;Lorg/joda/time/DateTimeZone;)V,280,282
+JT-000160,JT-000167,helper,N/A,void tearDown(),org.joda.time.TestLocalTime_Constructors.tearDown()V,91,96
+JT-000168,JT-000167,helper,N/A,void tearDown(),org.joda.time.TestLocalTime_Constructors.tearDown()V,91,96
+JT-000289,JT-000288,helper,N/A,void tearDown(),org.joda.time.TestPeriod_Constructors.tearDown()V,78,86
+JT-000169,JT-000167,helper,N/A,void tearDown(),org.joda.time.TestLocalTime_Constructors.tearDown()V,91,96
+JT-000320,JT-000323,helper,N/A,void tearDown(),org.joda.time.TestYearMonth_Basics.tearDown()V,81,85
+JT-000285,JT-000288,helper,N/A,void tearDown(),org.joda.time.TestPeriod_Constructors.tearDown()V,78,86
+JT-000000,JT-000006,helper,N/A,void tearDown(),org.joda.time.format.TestDateTimeFormatStyle.tearDown()V,81,89
+JT-000088,JT-000092,helper,N/A,void tearDown(),org.joda.time.TestDuration_Basics.tearDown()V,95,103
+JT-000283,JT-000282,helper,N/A,void tearDown(),org.joda.time.TestPartial_Constructors.tearDown()V,65,69
+JT-000329,JT-000339,helper,N/A,void tearDown(),org.joda.time.TestYearMonthDay_Basics.tearDown()V,77,81
+JT-000007,JT-000022,contextual,public static,DateTimeFieldType millisOfSecond(),org.joda.time.DateTimeFieldType.millisOfSecond()Lorg/joda/time/DateTimeFieldType;,163,165
+JT-000205,JT-000212,helper,N/A,void tearDown(),org.joda.time.TestMutableDateTime_Adds.tearDown()V,88,96
+JT-000126,JT-000133,helper,N/A,"void check(LocalDate test, int hour, int min, int sec)",org.joda.time.TestLocalDate_Basics.check(Lorg/joda/time/LocalDate;III)V,1154,1158
+JT-000324,JT-000328,helper,N/A,void tearDown(),org.joda.time.TestInterval_Basics.tearDown()V,104,112
+JT-000292,JT-000288,helper,N/A,void tearDown(),org.joda.time.TestPeriod_Constructors.tearDown()V,78,86
+JT-000093,JT-000092,helper,N/A,void tearDown(),org.joda.time.TestDuration_Basics.tearDown()V,95,103
+JT-000170,JT-000167,helper,N/A,void tearDown(),org.joda.time.TestLocalTime_Constructors.tearDown()V,91,96
+JT-000058,JT-000063,helper,N/A,void tearDown(),org.joda.time.TestDateTime_Basics.tearDown()V,119,127
+JT-000213,JT-000218,helper,N/A,void tearDown(),org.joda.time.TestMutableDateTime_Sets.tearDown()V,91,99
+JT-000134,JT-000143,helper,N/A,void tearDown(),org.joda.time.TestLocalDate_Constructors.tearDown()V,79,83
+JT-000252,JT-000257,helper,N/A,void tearDown(),org.joda.time.TestMutablePeriod_Updates.tearDown()V,89,97
+JT-000173,JT-000186,helper,N/A,void tearDown(),org.joda.time.TestLocalTime_Properties.tearDown()V,71,75
+JT-000097,JT-000100,helper,N/A,void tearDown(),org.joda.time.TestInstant_Basics.tearDown()V,97,105
+JT-000295,JT-000302,helper,N/A,void tearDown(),org.joda.time.TestTimeOfDay_Basics.tearDown()V,88,92
+JT-000219,JT-000228,helper,N/A,void tearDown(),org.joda.time.TestMutableInterval_Basics.tearDown()V,97,105
+JT-000258,JT-000257,helper,N/A,void tearDown(),org.joda.time.TestMutablePeriod_Updates.tearDown()V,89,97
+JT-000023,JT-000034,helper,N/A,void tearDown(),org.joda.time.TestDateMidnight_Constructors.tearDown()V,107,112
+JT-000144,JT-000151,helper,N/A,void tearDown(),org.joda.time.TestLocalDateTime_Constructors.tearDown()V,87,91
+JT-000101,JT-000110,helper,N/A,MockInterval(),org.joda.time.TestInterval_Basics$MockInterval.<init>()V,193,195
+JT-000340,JT-000339,helper,N/A,void tearDown(),org.joda.time.TestYearMonthDay_Basics.tearDown()V,77,81
+JT-000187,JT-000190,helper,N/A,void tearDown(),org.joda.time.TestMinMaxLong.tearDown()V,59,64
+JT-000064,JT-000073,helper,N/A,void tearDown(),org.joda.time.TestDateTime_Constructors.tearDown()V,92,98
+JT-000262,JT-000273,helper,N/A,void tearDown(),org.joda.time.TestPartial_Basics.tearDown()V,84,88
+JT-000229,JT-000237,helper,N/A,void tearDown(),org.joda.time.TestMutableInterval_Constructors.tearDown()V,93,101
+JT-000307,JT-000316,helper,N/A,void tearDown(),org.joda.time.TestTimeOfDay_Constructors.tearDown()V,83,88
+JT-000346,JT-000355,helper,N/A,void tearDown(),org.joda.time.TestYearMonthDay_Properties.tearDown()V,75,81
+JT-000303,JT-000302,helper,N/A,void tearDown(),org.joda.time.TestTimeOfDay_Basics.tearDown()V,88,92
+JT-000191,JT-000196,helper,N/A,void tearDown(),org.joda.time.TestMonthDay_Basics.tearDown()V,79,83

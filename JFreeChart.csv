@@ -1,0 +1,70 @@
+Test Id,Method Id,Method Role,Method Modifiers,Methods Header,Fully Qualified Name,Start Line,End Line
+JF-000104,JF-000042,helper,N/A,void setUp(),org.jfree.chart.PieChart3DTest.setUp()V,67,75
+JF-000148,JF-000078,helper,N/A,SegmentedTimeline getTimeline(),org.jfree.chart.axis.SegmentedTimelineAdditionalTest.getTimeline()Lorg/jfree/chart/axis/SegmentedTimeline;,375,397
+JF-000149,JF-000152,contextual,public,boolean equals(Object obj),org.jfree.data.category.DefaultCategoryDataset.equals(Ljava/lang/Object;)Z,387,419
+JF-000102,JF-000086,focal,public,Object clone(),org.jfree.chart.renderer.category.LineAndShapeRenderer.clone()Ljava/lang/Object;,1108,1118
+JF-000103,JF-000081,helper,N/A,void setUp(),org.jfree.chart.GanttChartTest.setUp()V,79,82
+JF-000100,JF-000101,helper,N/A,void setUp(),org.jfree.chart.LineChart3DTest.setUp()V,77,80
+JF-000024,JF-000042,helper,N/A,void setUp(),org.jfree.chart.PieChart3DTest.setUp()V,67,75
+JF-000065,JF-000010,helper,N/A,void setUp(),org.jfree.chart.StackedBarChart3DTest.setUp()V,78,81
+JF-000066,JF-000078,helper,N/A,SegmentedTimeline getTimeline(),org.jfree.chart.axis.SegmentedTimelineAdditionalTest.getTimeline()Lorg/jfree/chart/axis/SegmentedTimeline;,375,397
+JF-000143,JF-000147,contextual,N/A,IntervalCategoryDataset createDataset(),org.jfree.chart.GanttChartTest.createDataset()Lorg/jfree/data/category/IntervalCategoryDataset;,180,263
+JF-000109,JF-000110,helper,N/A,void setUp(),org.jfree.chart.XYAreaChartTest.setUp()V,76,79
+JF-000140,JF-000113,helper,N/A,void setUp(),org.jfree.chart.LineChartTest.setUp()V,77,80
+JF-000141,JF-000126,focal,N/A,Object serialised(Object original),org.jfree.chart.TestUtilities.serialised(Ljava/lang/Object;)Ljava/lang/Object;,78,96
+JF-000180,JF-000064,helper,N/A,void setUp(),org.jfree.chart.ScatterPlotTest.setUp()V,77,80
+JF-000181,JF-000162,helper,N/A,void setUp(),org.jfree.chart.XYStepChartTest.setUp()V,77,80
+JF-000138,JF-000139,helper,N/A,void setUp(),org.jfree.chart.TimeSeriesChartTest.setUp()V,76,79
+JF-000135,JF-000078,helper,N/A,SegmentedTimeline getTimeline(),org.jfree.chart.axis.SegmentedTimelineAdditionalTest.getTimeline()Lorg/jfree/chart/axis/SegmentedTimeline;,375,397
+JF-000179,JF-000139,helper,N/A,void setUp(),org.jfree.chart.TimeSeriesChartTest.setUp()V,76,79
+JF-000136,JF-000113,helper,N/A,void setUp(),org.jfree.chart.LineChartTest.setUp()V,77,80
+JF-000056,JF-000023,helper,N/A,void setUp(),org.jfree.chart.StackedAreaChartTest.setUp()V,78,81
+JF-000133,JF-000101,helper,N/A,void setUp(),org.jfree.chart.LineChart3DTest.setUp()V,77,80
+JF-000177,JF-000078,helper,N/A,SegmentedTimeline getTimeline(),org.jfree.chart.axis.SegmentedTimelineAdditionalTest.getTimeline()Lorg/jfree/chart/axis/SegmentedTimeline;,375,397
+JF-000057,JF-000064,helper,N/A,void setUp(),org.jfree.chart.ScatterPlotTest.setUp()V,77,80
+JF-000134,JF-000126,helper,N/A,Object serialised(Object original),org.jfree.chart.TestUtilities.serialised(Ljava/lang/Object;)Ljava/lang/Object;,78,96
+JF-000178,JF-000053,helper,N/A,void setUp(),org.jfree.chart.AreaChartTest.setUp()V,79,82
+JF-000054,JF-000055,helper,N/A,void setUp(),org.jfree.chart.WaterfallChartTest.setUp()V,73,76
+JF-000131,JF-000101,helper,N/A,void setUp(),org.jfree.chart.LineChart3DTest.setUp()V,77,80
+JF-000175,JF-000049,helper,N/A,void setUp(),org.jfree.chart.BarChart3DTest.setUp()V,82,85
+JF-000011,JF-000023,helper,N/A,void setUp(),org.jfree.chart.StackedAreaChartTest.setUp()V,78,81
+JF-000099,JF-000089,helper,N/A,void setUp(),org.jfree.chart.StackedBarChartTest.setUp()V,82,85
+JF-000132,JF-000081,helper,N/A,void setUp(),org.jfree.chart.GanttChartTest.setUp()V,79,82
+JF-000176,JF-000173,helper,N/A,void setUp(),org.jfree.chart.XYBarChartTest.setUp()V,78,81
+JF-000052,JF-000053,helper,N/A,void setUp(),org.jfree.chart.AreaChartTest.setUp()V,79,82
+JF-000174,JF-000078,helper,N/A,SegmentedTimeline getTimeline(),org.jfree.chart.axis.SegmentedTimelineAdditionalTest.getTimeline()Lorg/jfree/chart/axis/SegmentedTimeline;,375,397
+JF-000050,JF-000051,contextual,public,void addInterval(MeterInterval interval),org.jfree.chart.plot.MeterPlot.addInterval(Lorg/jfree/chart/plot/MeterInterval;)V,738,742
+JF-000171,JF-000113,helper,N/A,void setUp(),org.jfree.chart.LineChartTest.setUp()V,77,80
+JF-000172,JF-000173,helper,N/A,void setUp(),org.jfree.chart.XYBarChartTest.setUp()V,78,81
+JF-000170,JF-000055,helper,N/A,void setUp(),org.jfree.chart.WaterfallChartTest.setUp()V,73,76
+JF-000090,JF-000087,contextual,public,boolean equals(Object obj),org.jfree.chart.renderer.category.LineAndShapeRenderer.equals(Ljava/lang/Object;)Z,1048,1099
+JF-000006,JF-000010,helper,N/A,void setUp(),org.jfree.chart.StackedBarChart3DTest.setUp()V,78,81
+JF-000124,JF-000089,helper,N/A,void setUp(),org.jfree.chart.StackedBarChartTest.setUp()V,82,85
+JF-000048,JF-000049,helper,N/A,void setUp(),org.jfree.chart.BarChart3DTest.setUp()V,82,85
+JF-000125,JF-000130,contextual,public,int getIndex(Comparable key),org.jfree.data.DefaultKeyedValues.getIndex(Ljava/lang/Comparable;)I,153,161
+JF-000046,JF-000047,helper,N/A,void setUp(),org.jfree.chart.BarChartTest.setUp()V,81,84
+JF-000123,JF-000110,helper,N/A,void setUp(),org.jfree.chart.XYAreaChartTest.setUp()V,76,79
+JF-000043,JF-000010,helper,N/A,void setUp(),org.jfree.chart.StackedBarChart3DTest.setUp()V,78,81
+JF-000120,JF-000122,helper,N/A,void setUp(),org.jfree.chart.PieChartTest.setUp()V,66,69
+JF-000164,JF-000078,helper,N/A,SegmentedTimeline getTimeline(),org.jfree.chart.axis.SegmentedTimelineAdditionalTest.getTimeline()Lorg/jfree/chart/axis/SegmentedTimeline;,375,397
+JF-000000,JF-000005,helper,N/A,void setUp(),org.jfree.chart.XYLineChartTest.setUp()V,77,80
+JF-000088,JF-000089,helper,N/A,void setUp(),org.jfree.chart.StackedBarChartTest.setUp()V,82,85
+JF-000165,JF-000169,contextual,public,"void addValue(Number value, Comparable rowKey, Comparable columnKey)",org.jfree.data.category.DefaultCategoryDataset.addValue(Ljava/lang/Number;Ljava/lang/Comparable;Ljava/lang/Comparable;)V,230,234
+JF-000085,JF-000087,contextual,public,boolean equals(Object obj),org.jfree.chart.renderer.category.LineAndShapeRenderer.equals(Ljava/lang/Object;)Z,1048,1099
+JF-000163,JF-000078,helper,N/A,SegmentedTimeline getTimeline(),org.jfree.chart.axis.SegmentedTimelineAdditionalTest.getTimeline()Lorg/jfree/chart/axis/SegmentedTimeline;,375,397
+JF-000083,JF-000084,helper,N/A,void setUp(),org.jfree.chart.XYStepAreaChartTest.setUp()V,76,79
+JF-000161,JF-000162,helper,N/A,void setUp(),org.jfree.chart.XYStepChartTest.setUp()V,77,80
+JF-000082,JF-000047,helper,N/A,void setUp(),org.jfree.chart.BarChartTest.setUp()V,81,84
+JF-000080,JF-000081,helper,N/A,void setUp(),org.jfree.chart.GanttChartTest.setUp()V,79,82
+JF-000115,JF-000118,contextual,public,Object clone(),org.jfree.data.DefaultKeyedValues.clone()Ljava/lang/Object;,465,472
+JF-000159,JF-000160,contextual,public,boolean equals(Object obj),org.jfree.chart.labels.CustomXYToolTipGenerator.equals(Ljava/lang/Object;)Z,172,195
+JF-000157,JF-000047,helper,N/A,void setUp(),org.jfree.chart.BarChartTest.setUp()V,81,84
+JF-000114,JF-000078,helper,N/A,SegmentedTimeline getTimeline(),org.jfree.chart.axis.SegmentedTimelineAdditionalTest.getTimeline()Lorg/jfree/chart/axis/SegmentedTimeline;,375,397
+JF-000158,JF-000049,helper,N/A,void setUp(),org.jfree.chart.BarChart3DTest.setUp()V,82,85
+JF-000111,JF-000101,helper,N/A,void setUp(),org.jfree.chart.LineChart3DTest.setUp()V,77,80
+JF-000155,JF-000156,focal,public,Object clone(),org.jfree.chart.labels.CustomXYToolTipGenerator.clone()Ljava/lang/Object;,155,163
+JF-000079,JF-000005,helper,N/A,void setUp(),org.jfree.chart.XYLineChartTest.setUp()V,77,80
+JF-000112,JF-000113,helper,N/A,void setUp(),org.jfree.chart.LineChartTest.setUp()V,77,80
+JF-000153,JF-000053,helper,N/A,void setUp(),org.jfree.chart.AreaChartTest.setUp()V,79,82
+JF-000154,JF-000023,helper,N/A,void setUp(),org.jfree.chart.StackedAreaChartTest.setUp()V,78,81
+JF-000119,JF-000084,helper,N/A,void setUp(),org.jfree.chart.XYStepAreaChartTest.setUp()V,76,79
