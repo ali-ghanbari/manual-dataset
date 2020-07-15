@@ -160,7 +160,7 @@ public class Main {
             @Override
             public MethodVisitor visitMethod(int access, String name, String descriptor, String signature, String[] exceptions) {
                 if ((name + descriptor).equals(this.fullName)) {
-                    this.modifiers = Modifier.toString(access);
+                    this.modifiers = Modifier.toString(access).replace("transient", "");
                 }
                 return super.visitMethod(access, name, descriptor, signature, exceptions);
             }
