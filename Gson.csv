@@ -1,51 +1,188 @@
 Test Id,Method Id,Method Role,Method Modifiers,Methods Header,Fully Qualified Name,Start Line,End Line
-GS-000092,GS-000098,helper,N/A,void setUp(),com.google.gson.functional.JsonTreeTest.setUp()V,23,27
-GS-000052,GS-000053,focal,public,JsonReader(Reader in),com.google.gson.stream.JsonReader.<init>(Ljava/io/Reader;)V,289,294
-GS-000129,GS-000018,helper,N/A,void setUp(),com.google.gson.FieldAttributesTest.setUp()V,36,40
-GS-000009,GS-000015,contextual,public,JsonElement get(String memberName),com.google.gson.JsonObject.get(Ljava/lang/String;)Lcom/google/gson/JsonElement;,160,162
+GS-000000,GS-000003,contextual,public,void add(JsonElement element),com.google.gson.JsonArray.add(Lcom/google/gson/JsonElement;)V,93,98
+GS-000000,GS-000004,contextual,public,boolean contains(JsonElement element),com.google.gson.JsonArray.contains(Lcom/google/gson/JsonElement;)Z,151,153
+GS-000000,GS-000001,focal,public,boolean remove(JsonElement element),com.google.gson.JsonArray.remove(Lcom/google/gson/JsonElement;)Z,128,130
 GS-000000,GS-000005,contextual,public,String getAsString(),com.google.gson.JsonElement.getAsString()Ljava/lang/String;,190,192
-GS-000088,GS-000091,helper,N/A,void setUp(),com.google.gson.functional.MapTest.setUp()V,57,61
-GS-000121,GS-000120,helper,N/A,void setUp(),com.google.gson.GenericArrayTypeTest.setUp()V,37,41
-GS-000122,GS-000097,contextual,public,"Set<Entry<String, JsonElement>> entrySet()",com.google.gson.JsonObject.entrySet()Ljava/util/Set;,131,133
-GS-000046,GS-000012,contextual,public,"V put(K key, V value)",com.google.gson.internal.LinkedTreeMap.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;,90,98
-GS-000125,GS-000097,contextual,public,"Set<Entry<String, JsonElement>> entrySet()",com.google.gson.JsonObject.entrySet()Ljava/util/Set;,131,133
-GS-000049,GS-000051,contextual,public,JsonWriter beginObject(),com.google.gson.stream.JsonWriter.beginObject()Lcom/google/gson/stream/JsonWriter;,306,309
-GS-000126,GS-000014,contextual,public,boolean has(String memberName),com.google.gson.JsonObject.has(Ljava/lang/String;)Z,150,152
+GS-000000,GS-000002,focal,public,JsonElement remove(int index),com.google.gson.JsonArray.remove(I)Lcom/google/gson/JsonElement;,141,143
 GS-000006,GS-000008,contextual,private,"void addTypeAdaptersForDate(String datePattern, int dateStyle, int timeStyle, List<TypeAdapterFactory> factories)",com.google.gson.GsonBuilder.addTypeAdaptersForDate(Ljava/lang/String;IILjava/util/List;)V,575,589
-GS-000127,GS-000090,contextual,public final,Type getType(),com.google.gson.reflect.TypeToken.getType()Ljava/lang/reflect/Type;,100,102
-GS-000061,GS-000066,contextual,public,boolean htmlSafe(),com.google.gson.Gson.htmlSafe()Z,270,272
-GS-000019,GS-000020,focal,N/A,"void assertEqualsAndHashCode(Object a, Object b)",com.google.gson.common.MoreAsserts.assertEqualsAndHashCode(Ljava/lang/Object;Ljava/lang/Object;)V,65,71
-GS-000054,GS-000058,helper,N/A,void setUp(),com.google.gson.JsonStreamParserTest.setUp()V,30,34
-GS-000099,GS-000100,focal,public,int hashCode(),com.google.gson.internal.LazilyParsedNumber.hashCode()I,80,83
-GS-000059,GS-000018,helper,N/A,void setUp(),com.google.gson.FieldAttributesTest.setUp()V,36,40
+GS-000006,GS-000007,focal,public,Gson create(),com.google.gson.GsonBuilder.create()Lcom/google/gson/Gson;,562,573
+GS-000009,GS-000012,contextual,public,"V put(K key, V value)",com.google.gson.internal.LinkedTreeMap.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;,90,98
+GS-000009,GS-000013,contextual,public,V remove(Object key),com.google.gson.internal.LinkedTreeMap.remove(Ljava/lang/Object;)Ljava/lang/Object;,110,113
+GS-000009,GS-000010,focal,public,"void add(String property, JsonElement value)",com.google.gson.JsonObject.add(Ljava/lang/String;Lcom/google/gson/JsonElement;)V,53,58
+GS-000009,GS-000014,contextual,public,boolean has(String memberName),com.google.gson.JsonObject.has(Ljava/lang/String;)Z,150,152
+GS-000009,GS-000011,focal,public,JsonElement remove(String property),com.google.gson.JsonObject.remove(Ljava/lang/String;)Lcom/google/gson/JsonElement;,67,69
+GS-000009,GS-000015,contextual,public,JsonElement get(String memberName),com.google.gson.JsonObject.get(Ljava/lang/String;)Lcom/google/gson/JsonElement;,160,162
 GS-000016,GS-000018,helper,N/A,void setUp(),com.google.gson.FieldAttributesTest.setUp()V,36,40
-GS-000075,GS-000078,contextual,public static,<T extends Object> TypeToken<T> get(Class<T> type),com.google.gson.reflect.TypeToken.get(Ljava/lang/Class;)Lcom/google/gson/reflect/TypeToken;,302,304
-GS-000106,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
-GS-000107,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
-GS-000108,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
-GS-000109,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000016,GS-000017,focal,public,boolean hasModifier(int modifier),com.google.gson.FieldAttributes.hasModifier(I)Z,134,136
+GS-000019,GS-000020,focal,N/A,"void assertEqualsAndHashCode(Object a, Object b)",com.google.gson.common.MoreAsserts.assertEqualsAndHashCode(Ljava/lang/Object;Ljava/lang/Object;)V,65,71
+GS-000021,GS-000029,contextual,public,boolean nextBoolean(),com.google.gson.stream.JsonReader.nextBoolean()Z,839,854
+GS-000021,GS-000030,contextual,public,void nextNull(),com.google.gson.stream.JsonReader.nextNull()V,863,874
+GS-000021,GS-000031,contextual,public,int nextInt(),com.google.gson.stream.JsonReader.nextInt()I,1154,1202
+GS-000021,GS-000023,contextual,public,void beginArray(),com.google.gson.stream.JsonReader.beginArray()V,340,352
+GS-000021,GS-000024,contextual,public,void endArray(),com.google.gson.stream.JsonReader.endArray()V,358,370
+GS-000021,GS-000025,contextual,public,void beginObject(),com.google.gson.stream.JsonReader.beginObject()V,376,387
 GS-000021,GS-000032,helper,N/A,JsonReader create(String data),com.google.gson.stream.JsonReaderPathTest$Factory.create(Ljava/lang/String;)Lcom/google/gson/stream/JsonReader;,254,254
+GS-000021,GS-000022,focal,public,String getPath(),com.google.gson.stream.JsonReader.getPath()Ljava/lang/String;,1458,1483
+GS-000021,GS-000026,contextual,public,void endObject(),com.google.gson.stream.JsonReader.endObject()V,393,406
+GS-000021,GS-000027,contextual,public,String nextName(),com.google.gson.stream.JsonReader.nextName()Ljava/lang/String;,776,794
+GS-000021,GS-000028,contextual,public,String nextString(),com.google.gson.stream.JsonReader.nextString()Ljava/lang/String;,804,830
+GS-000033,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000033,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000033,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000033,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000038,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000038,GS-000041,focal,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
+GS-000038,GS-000039,focal,public,void close(),com.google.gson.stream.JsonReader.close()V,1207,1212
+GS-000042,GS-000044,contextual,public final,void setLenient(boolean lenient),com.google.gson.stream.JsonWriter.setLenient(Z)V,234,236
+GS-000042,GS-000045,contextual,public,JsonWriter beginArray(),com.google.gson.internal.bind.JsonTreeWriter.beginArray()Lcom/google/gson/stream/JsonWriter;,94,99
+GS-000042,GS-000043,focal,public,void close(),com.google.gson.internal.bind.JsonTreeWriter.close()V,202,207
+GS-000046,GS-000047,focal,public,boolean containsKey(Object key),com.google.gson.internal.LinkedTreeMap.containsKey(Ljava/lang/Object;)Z,86,88
+GS-000046,GS-000012,contextual,public,"V put(K key, V value)",com.google.gson.internal.LinkedTreeMap.put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;,90,98
+GS-000046,GS-000048,contextual,,"Node<K, V> findByObject(Object key)",com.google.gson.internal.LinkedTreeMap.findByObject(Ljava/lang/Object;)Lcom/google/gson/internal/LinkedTreeMap$Node;,183,190
+GS-000049,GS-000050,focal,public,JsonWriter name(String name),com.google.gson.stream.JsonWriter.name(Ljava/lang/String;)Lcom/google/gson/stream/JsonWriter;,385,397
+GS-000049,GS-000051,contextual,public,JsonWriter beginObject(),com.google.gson.stream.JsonWriter.beginObject()Lcom/google/gson/stream/JsonWriter;,306,309
+GS-000052,GS-000053,focal,public,JsonReader(Reader in),com.google.gson.stream.JsonReader.<init>(Ljava/io/Reader;)V,289,294
+GS-000054,GS-000058,helper,N/A,void setUp(),com.google.gson.JsonStreamParserTest.setUp()V,30,34
+GS-000054,GS-000056,contextual,public,JsonToken peek(),com.google.gson.stream.JsonReader.peek()Lcom/google/gson/stream/JsonToken;,422,459
+GS-000054,GS-000057,contextual,,int doPeek(),com.google.gson.stream.JsonReader.doPeek()I,461,595
+GS-000054,GS-000055,focal,public,boolean hasNext(),com.google.gson.JsonStreamParser.hasNext()Z,102,112
+GS-000059,GS-000018,helper,N/A,void setUp(),com.google.gson.FieldAttributesTest.setUp()V,36,40
+GS-000059,GS-000060,focal,public,FieldAttributes(Field f),com.google.gson.FieldAttributes.<init>(Ljava/lang/reflect/Field;)V,44,47
+GS-000061,GS-000062,focal,,"Gson(Excluder excluder, FieldNamingStrategy fieldNamingStrategy, Map<Type, InstanceCreator<?>> instanceCreators, boolean serializeNulls, boolean complexMapKeySerialization, boolean generateNonExecutableGson, boolean htmlSafe, boolean prettyPrinting, boolean lenient, boolean serializeSpecialFloatingPointValues, LongSerializationPolicy longSerializationPolicy, List<TypeAdapterFactory> typeAdapterFactories)",com.google.gson.Gson.<init>(Lcom/google/gson/internal/Excluder;Lcom/google/gson/FieldNamingStrategy;Ljava/util/Map;ZZZZZZZLcom/google/gson/LongSerializationPolicy;Ljava/util/List;)V,181,256
+GS-000061,GS-000063,contextual,public,Excluder excluder(),com.google.gson.Gson.excluder()Lcom/google/gson/internal/Excluder;,258,260
+GS-000061,GS-000064,contextual,public,FieldNamingStrategy fieldNamingStrategy(),com.google.gson.Gson.fieldNamingStrategy()Lcom/google/gson/FieldNamingStrategy;,262,264
+GS-000061,GS-000065,contextual,public,boolean serializeNulls(),com.google.gson.Gson.serializeNulls()Z,266,268
+GS-000061,GS-000066,contextual,public,boolean htmlSafe(),com.google.gson.Gson.htmlSafe()Z,270,272
 GS-000067,GS-000018,helper,N/A,void setUp(),com.google.gson.FieldAttributesTest.setUp()V,36,40
-GS-000101,GS-000102,focal,public,boolean equals(Object obj),com.google.gson.internal.LazilyParsedNumber.equals(Ljava/lang/Object;)Z,85,95
+GS-000067,GS-000068,focal,,boolean isSynthetic(),com.google.gson.FieldAttributes.isSynthetic()Z,154,156
 GS-000069,GS-000007,contextual,public,Gson create(),com.google.gson.GsonBuilder.create()Lcom/google/gson/Gson;,562,573
+GS-000069,GS-000071,contextual,public static,void checkArgument(boolean condition),com.google.gson.internal.$Gson$Preconditions.checkArgument(Z)V,44,48
+GS-000069,GS-000072,contextual,public static,TypeToken<?> get(Type type),com.google.gson.reflect.TypeToken.get(Ljava/lang/reflect/Type;)Lcom/google/gson/reflect/TypeToken;,295,297
+GS-000069,GS-000073,contextual,public static,"TypeAdapterFactory newFactoryWithMatchRawType(TypeToken<?> exactType, Object typeAdapter)",com.google.gson.internal.bind.TreeTypeAdapter.newFactoryWithMatchRawType(Lcom/google/gson/reflect/TypeToken;Ljava/lang/Object;)Lcom/google/gson/TypeAdapterFactory;,103,108
+GS-000069,GS-000040,contextual,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000069,GS-000070,focal,public,"GsonBuilder registerTypeAdapter(Type type, Object typeAdapter)",com.google.gson.GsonBuilder.registerTypeAdapter(Ljava/lang/reflect/Type;Ljava/lang/Object;)Lcom/google/gson/GsonBuilder;,470,487
+GS-000069,GS-000074,contextual,public static,"TypeAdapterFactory newFactory(TypeToken<?> exactType, Object typeAdapter)",com.google.gson.internal.bind.TreeTypeAdapter.newFactory(Lcom/google/gson/reflect/TypeToken;Ljava/lang/Object;)Lcom/google/gson/TypeAdapterFactory;,95,97
+GS-000069,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000075,GS-000077,contextual,public,boolean isAssignableFrom(Type from),com.google.gson.reflect.TypeToken.isAssignableFrom(Ljava/lang/reflect/Type;)Z,121,143
+GS-000075,GS-000078,contextual,public static,<T extends Object> TypeToken<T> get(Class<T> type),com.google.gson.reflect.TypeToken.get(Ljava/lang/Class;)Lcom/google/gson/reflect/TypeToken;,302,304
+GS-000075,GS-000076,focal,public,boolean isAssignableFrom(Class<?> cls),com.google.gson.reflect.TypeToken.isAssignableFrom(Ljava/lang/Class;)Z,110,113
+GS-000079,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000079,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000079,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000080,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000080,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000080,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000081,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000081,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000081,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
+GS-000083,GS-000084,helper,N/A,void setUp(),com.google.gson.functional.CircularReferenceTest.setUp()V,41,45
+GS-000083,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000083,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000083,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000085,GS-000086,helper,N/A,String getExpectedJson(),com.google.gson.functional.ExposeFieldsTest$ClassWithExposedFields.getExpectedJson()Ljava/lang/String;,131,139
+GS-000085,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000085,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000085,GS-000087,helper,N/A,void setUp(),com.google.gson.functional.ExposeFieldsTest.setUp()V,37,44
+GS-000085,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000088,GS-000090,contextual,public final,Type getType(),com.google.gson.reflect.TypeToken.getType()Ljava/lang/reflect/Type;,100,102
+GS-000088,GS-000091,helper,N/A,void setUp(),com.google.gson.functional.MapTest.setUp()V,57,61
+GS-000088,GS-000036,focal,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000088,GS-000089,contextual,public,"void toJson(Object src, Type typeOfSrc, Appendable writer)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Ljava/lang/Appendable;)V,645,652
+GS-000092,GS-000094,contextual,public,"JsonElement toJsonTree(Object src, Type typeOfSrc)",com.google.gson.Gson.toJsonTree(Ljava/lang/Object;Ljava/lang/reflect/Type;)Lcom/google/gson/JsonElement;,560,564
+GS-000092,GS-000095,contextual,public,boolean isJsonObject(),com.google.gson.JsonElement.isJsonObject()Z,54,56
+GS-000092,GS-000096,contextual,public,JsonObject getAsJsonObject(),com.google.gson.JsonElement.getAsJsonObject()Lcom/google/gson/JsonObject;,86,91
+GS-000092,GS-000093,focal,public,JsonElement toJsonTree(Object src),com.google.gson.Gson.toJsonTree(Ljava/lang/Object;)Lcom/google/gson/JsonElement;,537,542
+GS-000092,GS-000097,contextual,public,"Set<Entry<String, JsonElement>> entrySet()",com.google.gson.JsonObject.entrySet()Ljava/util/Set;,131,133
+GS-000092,GS-000098,helper,N/A,void setUp(),com.google.gson.functional.JsonTreeTest.setUp()V,23,27
+GS-000099,GS-000100,focal,public,int hashCode(),com.google.gson.internal.LazilyParsedNumber.hashCode()I,80,83
+GS-000101,GS-000102,focal,public,boolean equals(Object obj),com.google.gson.internal.LazilyParsedNumber.equals(Ljava/lang/Object;)Z,85,95
+GS-000103,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000103,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000103,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
 GS-000103,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000104,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000104,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000104,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
 GS-000104,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
 GS-000105,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
-GS-000080,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
-GS-000081,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
-GS-000083,GS-000084,helper,N/A,void setUp(),com.google.gson.functional.CircularReferenceTest.setUp()V,41,45
-GS-000085,GS-000087,helper,N/A,void setUp(),com.google.gson.functional.ExposeFieldsTest.setUp()V,37,44
-GS-000042,GS-000045,contextual,public,JsonWriter beginArray(),com.google.gson.internal.bind.JsonTreeWriter.beginArray()Lcom/google/gson/stream/JsonWriter;,94,99
-GS-000117,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
-GS-000118,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
-GS-000119,GS-000120,helper,N/A,void setUp(),com.google.gson.GenericArrayTypeTest.setUp()V,37,41
-GS-000033,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000105,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000105,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000105,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000106,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000106,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000106,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000106,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000107,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000107,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000107,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
+GS-000107,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000108,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000108,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000108,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000108,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000109,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000109,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000109,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
+GS-000109,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000110,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000110,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000110,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
 GS-000110,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000111,GS-000040,contextual,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
 GS-000111,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
-GS-000079,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000111,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000111,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000111,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000112,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000112,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000112,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
 GS-000112,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000113,GS-000036,focal,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
 GS-000113,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000113,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000113,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000114,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000114,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000114,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
 GS-000114,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
-GS-000038,GS-000041,focal,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
 GS-000115,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000115,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000115,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000115,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000116,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000116,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000116,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
 GS-000116,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000117,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000117,GS-000035,contextual,public,String toJson(JsonElement jsonElement),com.google.gson.Gson.toJson(Lcom/google/gson/JsonElement;)Ljava/lang/String;,686,690
+GS-000117,GS-000036,contextual,public,"String toJson(Object src, Type typeOfSrc)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;)Ljava/lang/String;,601,605
+GS-000117,GS-000034,focal,public,String toJson(Object src),com.google.gson.Gson.toJson(Ljava/lang/Object;)Ljava/lang/String;,579,584
+GS-000118,GS-000040,focal,public,"<T extends Object> T fromJson(String json, Class<T> classOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/Class;)Ljava/lang/Object;,772,775
+GS-000118,GS-000082,contextual,public static,<T extends Object> Class<T> wrap(Class<T> type),com.google.gson.internal.Primitives.wrap(Ljava/lang/Class;)Ljava/lang/Class;,95,101
+GS-000118,GS-000041,contextual,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
+GS-000118,GS-000037,helper,N/A,void setUp(),com.google.gson.functional.StringTest.setUp()V,16,20
+GS-000119,GS-000090,focal,public final,Type getType(),com.google.gson.reflect.TypeToken.getType()Ljava/lang/reflect/Type;,100,102
+GS-000119,GS-000120,helper,N/A,void setUp(),com.google.gson.GenericArrayTypeTest.setUp()V,37,41
+GS-000121,GS-000090,focal,public final,Type getType(),com.google.gson.reflect.TypeToken.getType()Ljava/lang/reflect/Type;,100,102
+GS-000121,GS-000120,helper,N/A,void setUp(),com.google.gson.GenericArrayTypeTest.setUp()V,37,41
+GS-000122,GS-000094,focal,public,"JsonElement toJsonTree(Object src, Type typeOfSrc)",com.google.gson.Gson.toJsonTree(Ljava/lang/Object;Ljava/lang/reflect/Type;)Lcom/google/gson/JsonElement;,560,564
+GS-000122,GS-000097,contextual,public,"Set<Entry<String, JsonElement>> entrySet()",com.google.gson.JsonObject.entrySet()Ljava/util/Set;,131,133
+GS-000122,GS-000123,contextual,public,"void toJson(Object src, Type typeOfSrc, JsonWriter writer)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/stream/JsonWriter;)V,659,677
+GS-000122,GS-000124,contextual,public,JsonElement get(),com.google.gson.internal.bind.JsonTreeWriter.get()Lcom/google/gson/JsonElement;,64,69
+GS-000125,GS-000094,focal,public,"JsonElement toJsonTree(Object src, Type typeOfSrc)",com.google.gson.Gson.toJsonTree(Ljava/lang/Object;Ljava/lang/reflect/Type;)Lcom/google/gson/JsonElement;,560,564
+GS-000125,GS-000090,contextual,public final,Type getType(),com.google.gson.reflect.TypeToken.getType()Ljava/lang/reflect/Type;,100,102
+GS-000125,GS-000097,contextual,public,"Set<Entry<String, JsonElement>> entrySet()",com.google.gson.JsonObject.entrySet()Ljava/util/Set;,131,133
+GS-000125,GS-000123,contextual,public,"void toJson(Object src, Type typeOfSrc, JsonWriter writer)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/stream/JsonWriter;)V,659,677
+GS-000125,GS-000124,contextual,public,JsonElement get(),com.google.gson.internal.bind.JsonTreeWriter.get()Lcom/google/gson/JsonElement;,64,69
+GS-000126,GS-000094,focal,public,"JsonElement toJsonTree(Object src, Type typeOfSrc)",com.google.gson.Gson.toJsonTree(Ljava/lang/Object;Ljava/lang/reflect/Type;)Lcom/google/gson/JsonElement;,560,564
+GS-000126,GS-000090,contextual,public final,Type getType(),com.google.gson.reflect.TypeToken.getType()Ljava/lang/reflect/Type;,100,102
+GS-000126,GS-000095,contextual,public,boolean isJsonObject(),com.google.gson.JsonElement.isJsonObject()Z,54,56
+GS-000126,GS-000096,contextual,public,JsonObject getAsJsonObject(),com.google.gson.JsonElement.getAsJsonObject()Lcom/google/gson/JsonObject;,86,91
+GS-000126,GS-000123,contextual,public,"void toJson(Object src, Type typeOfSrc, JsonWriter writer)",com.google.gson.Gson.toJson(Ljava/lang/Object;Ljava/lang/reflect/Type;Lcom/google/gson/stream/JsonWriter;)V,659,677
+GS-000126,GS-000124,contextual,public,JsonElement get(),com.google.gson.internal.bind.JsonTreeWriter.get()Lcom/google/gson/JsonElement;,64,69
+GS-000126,GS-000014,contextual,public,boolean has(String memberName),com.google.gson.JsonObject.has(Ljava/lang/String;)Z,150,152
+GS-000127,GS-000128,contextual,public,"<T extends Object> T fromJson(Reader json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/io/Reader;Ljava/lang/reflect/Type;)Ljava/lang/Object;,849,855
+GS-000127,GS-000090,contextual,public final,Type getType(),com.google.gson.reflect.TypeToken.getType()Ljava/lang/reflect/Type;,100,102
+GS-000127,GS-000041,focal,public,"<T extends Object> T fromJson(String json, Type typeOfT)",com.google.gson.Gson.fromJson(Ljava/lang/String;Ljava/lang/reflect/Type;)Ljava/lang/Object;,795,803
+GS-000129,GS-000130,focal,public,Class<?> getDeclaringClass(),com.google.gson.FieldAttributes.getDeclaringClass()Ljava/lang/Class;,52,54
+GS-000129,GS-000018,helper,N/A,void setUp(),com.google.gson.FieldAttributesTest.setUp()V,36,40

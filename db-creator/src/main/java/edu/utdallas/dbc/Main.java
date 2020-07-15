@@ -22,8 +22,10 @@ import java.io.PrintWriter;
 import java.io.Reader;
 import java.lang.reflect.Modifier;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Map;
+import java.util.Set;
 
 public class Main {
     private static final String[] SUBJECTS;
@@ -34,9 +36,9 @@ public class Main {
 
     private static final File SUBJECTS_BASE_DIR;
 
-    private static final Map<String, Pair<String, String>> ROUTES_TABLE;
+    private static final Map<String, Set<Pair<String, String>>> ROUTES_TABLE;
 
-    private static final Map<String, Triple<String, String, Pair<String, String>>> DATA_TABLE;
+    private static final Map<String, Set<Triple<String, String, Pair<String, String>>>> DATA_TABLE;
 
     static {
         SUBJECTS = new String[] {"CommonsLang", "Gson", "JFreeChart", "Joda-Time"};
@@ -75,24 +77,34 @@ public class Main {
                 "End Line");
         loadDataTable(subject);
         loadRoutesTable(subject);
-        for (final Map.Entry<String, Pair<String, String>> pair : ROUTES_TABLE.entrySet()) {
-            final String testId = pair.getKey();
-            final String methodId = pair.getValue().getLeft();
-            final String methodRole = pair.getValue().getRight();
-            final Triple<String, String, Pair<String, String>> methodInfo = DATA_TABLE.get(methodId);
-            if (methodInfo == null) {
-                throw new IllegalStateException();
-            }
-            final String methodFullyQualifiedName = methodInfo.getMiddle();
-            final String modifiers = readMethodModifiers(subject, methodFullyQualifiedName);
-            final String startLine = methodInfo.getRight().getLeft();
-            final String endLine = methodInfo.getRight().getRight();
-            if (modifiers == null) {
-                csvPrinter.printRecord(testId, methodId, methodRole, "N/A", methodInfo.getLeft(), methodFullyQualifiedName, startLine, endLine);
-            } else {
-                csvPrinter.printRecord(testId, methodId, methodRole, modifiers, methodInfo.getLeft(), methodFullyQualifiedName, startLine, endLine);
-            }
-        }
+        ROUTES_TABLE.entrySet().stream()
+                .sorted(Map.Entry.comparingByKey())
+                .forEach(ent -> {
+                    final String testId = ent.getKey();
+                    for (final Pair<String, String> pair : ent.getValue()) {
+                        final String methodId = pair.getLeft();
+                        final String methodRole = pair.getRight();
+                        final Set<Triple<String, String, Pair<String, String>>> methodsInfo = DATA_TABLE.get(methodId);
+                        if (methodsInfo == null) {
+                            throw new IllegalStateException();
+                        }
+                        for (final Triple<String, String, Pair<String, String>> methodInfo : methodsInfo) {
+                            final String methodFullyQualifiedName = methodInfo.getMiddle();
+                            final String modifiers = readMethodModifiers(subject, methodFullyQualifiedName);
+                            final String startLine = methodInfo.getRight().getLeft();
+                            final String endLine = methodInfo.getRight().getRight();
+                            try {
+                                if (modifiers == null) {
+                                    csvPrinter.printRecord(testId, methodId, methodRole, "N/A", methodInfo.getLeft(), methodFullyQualifiedName, startLine, endLine);
+                                } else {
+                                    csvPrinter.printRecord(testId, methodId, methodRole, modifiers, methodInfo.getLeft(), methodFullyQualifiedName, startLine, endLine);
+                                }
+                            } catch (Exception e) {
+                                throw new RuntimeException(e.getMessage(), e.getCause());
+                            }
+                        }
+                    }
+                });
         csvPrinter.close();
     }
 
@@ -104,7 +116,9 @@ public class Main {
             recordIterator.next(); // skip header
             while (recordIterator.hasNext()) {
                 final CSVRecord record = recordIterator.next();
-                ROUTES_TABLE.put(record.get(0), new ImmutablePair<>(record.get(1), record.get(2)));
+                final String testId = record.get(0);
+                final Set<Pair<String, String>> set = ROUTES_TABLE.computeIfAbsent(testId, k -> new HashSet<>());
+                set.add(new ImmutablePair<>(record.get(1), record.get(2)));
             }
         } catch (final Exception e) {
             e.printStackTrace();
@@ -121,7 +135,9 @@ public class Main {
             while (recordIterator.hasNext()) {
                 final CSVRecord record = recordIterator.next();
                 final Pair<String, String> startAndEndLines = new ImmutablePair<>(record.get(3), record.get(4));
-                DATA_TABLE.put(record.get(0), new ImmutableTriple<>(record.get(1), record.get(2), startAndEndLines));
+                final String methodId = record.get(0);
+                final Set<Triple<String, String, Pair<String, String>>> set = DATA_TABLE.computeIfAbsent(methodId, k -> new HashSet<>());
+                set.add(new ImmutableTriple<>(record.get(1), record.get(2), startAndEndLines));
             }
         } catch (final Exception e) {
             e.printStackTrace();
